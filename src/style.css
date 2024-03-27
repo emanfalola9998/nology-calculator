@@ -1,3 +1,88 @@
+.iphone-calculator__buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: "cancel plusminus percentage divide" "seven eight nine multiply" "four five six minus" "one two three plus" "zero zero decimalplace equal";
+  gap: 10px;
+}
+.iphone-calculator__buttons-cancel {
+  grid-area: cancel;
+  height: 50px;
+}
+.iphone-calculator__buttons-plusminus {
+  grid-area: plusminus;
+  height: 50px;
+}
+.iphone-calculator__buttons-percentage {
+  grid-area: percentage;
+  height: 50px;
+}
+.iphone-calculator__buttons-divide {
+  grid-area: divide;
+  height: 50px;
+}
+.iphone-calculator__buttons-seven {
+  grid-area: seven;
+  height: 50px;
+}
+.iphone-calculator__buttons-eight {
+  grid-area: eight;
+  height: 50px;
+}
+.iphone-calculator__buttons-nine {
+  grid-area: nine;
+  height: 50px;
+}
+.iphone-calculator__buttons-multiply {
+  grid-area: multiply;
+  height: 50px;
+}
+.iphone-calculator__buttons-four {
+  grid-area: four;
+  height: 50px;
+}
+.iphone-calculator__buttons-five {
+  grid-area: five;
+  height: 50px;
+}
+.iphone-calculator__buttons-six {
+  grid-area: six;
+  height: 50px;
+}
+.iphone-calculator__buttons-minus {
+  grid-area: minus;
+  height: 50px;
+}
+.iphone-calculator__buttons-one {
+  grid-area: one;
+  height: 50px;
+}
+.iphone-calculator__buttons-two {
+  grid-area: two;
+  height: 50px;
+}
+.iphone-calculator__buttons-three {
+  grid-area: three;
+  height: 50px;
+}
+.iphone-calculator__buttons-plus {
+  grid-area: plus;
+  height: 50px;
+}
+.iphone-calculator__buttons-zero {
+  grid-area: zero;
+  height: 50px;
+}
+.iphone-calculator__buttons-decimalplace {
+  grid-area: decimalplace;
+  height: 50px;
+}
+.iphone-calculator__buttons-equal {
+  grid-area: equal;
+  height: 50px;
+}
+
 * {
   background-color: black;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
