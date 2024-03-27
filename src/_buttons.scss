@@ -1,0 +1,19 @@
+.iphone-calculator__buttons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "cancel plusminus percentage divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero decimalplace equal";
+    gap:10px;
+
+    @each $skill in (cancel, plusminus, percentage, divide, seven, eight, nine, multiply, four, five, six, minus, one, two, three, plus, zero, decimalplace, equal)  {
+        &-#{$skill} {
+            grid-area: #{$skill};
+            height:50px;
+        }
+    }
+}
