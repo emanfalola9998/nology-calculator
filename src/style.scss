@@ -1,15 +1,22 @@
-@use './buttons';
-@use './display';
+@use "./buttons";
+@use "./display";
 
-*{
+* {
   background-color: black;
-  color:white;
+  color: white;
   padding: 10px;
-  font:bold 24px arial;
+  font: bold 24px arial;
 }
 
-.iphone-calculator{
+.iphone-calculator {
   border: 2px solid orange;
   border-radius: 16px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .iphone-calculator{
+    max-width: 30%;
+  }
+}

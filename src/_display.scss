@@ -1,8 +1,14 @@
 .iphone-calculator__display{
+    display:flex;
     width:auto;
     height:100px;
     padding: 20px;
     margin: 20px;
     border: orange solid ;
+    &-input{
+        width: 100%;
+        height:auto;
+    }
 }
+
 
