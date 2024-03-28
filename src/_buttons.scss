@@ -13,17 +13,16 @@
     @each $skill in (cancel, plusminus, percentage, divide, seven, eight, nine, multiply, four, five, six, minus, one, two, three, plus, zero, decimalplace, equal)  {
         &-#{$skill} {
             grid-area: #{$skill};
-            height:50px;
-            // border: 2px solid grey;
-            border-radius: 4px;
-            cursor: pointer; 
+            border-radius: 8px;
+            
         }
-
     }
+    
     @each $skill in (divide, multiply, minus, plus, equal){
         &-#{$skill}{
             background-color: orange;
             // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer; 
         &:hover{
             background-color: darken(orange, 10%);
         }
@@ -33,6 +32,7 @@
     @each $skill in (cancel, plusminus, percentage){
         &-#{$skill}{
             background-color: #36454F;
+            
             color:black;
         &:hover{
             background-color: darken(#36454F, 10%);
@@ -42,7 +42,7 @@
     @each $skill in (seven, eight, nine, four, five, six, one, two, three, zero, decimalplace)  {
         &-#{$skill} {
             background-color: grey;
-            background-color: grey;
+
         &:hover{
             background-color: darken(grey, 10%);
         }
