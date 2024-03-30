@@ -20,18 +20,20 @@ if (!display || !buttonsContainer || !numbers || !operations || !special || !del
 
 
 const handleDisplay = (value: string) => {
-  
   display.value += value;
   console.log('display:', display.value); 
 }
 
 const handleButtonSelection = (e: MouseEvent): string => {
-  const buttonText = (e.target as HTMLButtonElement).innerText;
-  if(buttonText === "="){
-    return "";
+    const buttonText = (e.target as HTMLButtonElement).innerText;
+    switch (buttonText.toLowerCase()) {
+      case "=":
+      case "c": 
+        return "";
+      default:
+        return buttonText;
+    }
   }
-  return buttonText;
-}
 
 const calculate = (expression: string, mathInstance: math.MathJsStatic) => {
       if (expression){
@@ -45,6 +47,14 @@ const calculate = (expression: string, mathInstance: math.MathJsStatic) => {
       }
 }
 
+const handleDelete = (value: string, e: MouseEvent) => {
+  const buttonText = (e.target as HTMLButtonElement).innerText;
+  if(buttonText === "c"){
+    display.value = "";
+    return display.value
+  }
+}
+
 buttonsContainer.addEventListener('click', (e) => {
   const buttonText = handleButtonSelection(e);
   handleDisplay(buttonText);
@@ -56,6 +66,10 @@ equals.addEventListener('click', () => {
   display.value = "" 
   handleDisplay(calculate(expression, mathInstance));
 });
+
+deleteAll.addEventListener('click', () => {
+  display.value = ""
+})
 
 
 
