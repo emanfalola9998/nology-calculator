@@ -27,6 +27,9 @@ const handleDisplay = (value: string) => {
 
 const handleButtonSelection = (e: MouseEvent): string => {
   const buttonText = (e.target as HTMLButtonElement).innerText;
+  if(buttonText === "="){
+    return "";
+  }
   return buttonText;
 }
 
