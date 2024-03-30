@@ -8,110 +8,124 @@
 .iphone-calculator__buttons-cancel {
   grid-area: cancel;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-plusminus {
   grid-area: plusminus;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-percentage {
   grid-area: percentage;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-divide {
   grid-area: divide;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-seven {
   grid-area: seven;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-eight {
   grid-area: eight;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-nine {
   grid-area: nine;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-multiply {
   grid-area: multiply;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-four {
   grid-area: four;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-five {
   grid-area: five;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-six {
   grid-area: six;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-minus {
   grid-area: minus;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-one {
   grid-area: one;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-two {
   grid-area: two;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-three {
   grid-area: three;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-plus {
   grid-area: plus;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-zero {
   grid-area: zero;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-decimalplace {
   grid-area: decimalplace;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-equal {
   grid-area: equal;
   border-radius: 8px;
+  cursor: pointer;
 }
 .iphone-calculator__buttons-divide {
   background-color: orange;
-  cursor: pointer;
 }
 .iphone-calculator__buttons-divide:hover {
   background-color: #cc8400;
 }
 .iphone-calculator__buttons-multiply {
   background-color: orange;
-  cursor: pointer;
 }
 .iphone-calculator__buttons-multiply:hover {
   background-color: #cc8400;
 }
 .iphone-calculator__buttons-minus {
   background-color: orange;
-  cursor: pointer;
 }
 .iphone-calculator__buttons-minus:hover {
   background-color: #cc8400;
 }
 .iphone-calculator__buttons-plus {
   background-color: orange;
-  cursor: pointer;
 }
 .iphone-calculator__buttons-plus:hover {
   background-color: #cc8400;
 }
 .iphone-calculator__buttons-equal {
   background-color: orange;
-  cursor: pointer;
 }
 .iphone-calculator__buttons-equal:hover {
   background-color: #cc8400;
