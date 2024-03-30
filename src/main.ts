@@ -1,8 +1,8 @@
 import './style.css';
 import * as math from 'mathjs';
-
+import { EvalFunction } from 'mathjs';
 // Assign the imported math object to mathInstance
-const mathInstance: any = math;
+const mathInstance: math.EvalFunction = math;
 
 
 
@@ -40,7 +40,7 @@ const handleButtonSelection = (e: MouseEvent): string => {
     }
   }
 
-const calculate = (expression: string, mathInstance: math.MathJsStatic) => {
+const calculate = (expression: string, mathInstance: EvalFunction) => {
       if (expression){
         const result = mathInstance.evaluate(expression);
         console.log('Result:', result);
