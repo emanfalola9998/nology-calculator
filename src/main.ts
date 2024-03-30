@@ -90,7 +90,7 @@ deleteAll.addEventListener('click', () => {
   display.value = "";
 })
 
-plusminus.addEventListener('click', () => changeSign(display.value));
+plusminus.addEventListener('click', () => changeSign());
 
-percentage.addEventListener('click', () => changeToPercentage(display.value));
+percentage.addEventListener('click', () => changeToPercentage());
 
