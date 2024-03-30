@@ -9,14 +9,12 @@ const operations = document.querySelector('.iphone-calculator__buttons-operation
 const special = document.querySelector('.iphone-calculator__buttons-special') as HTMLElement;
 const deleteAll = document.querySelector('.iphone-calculator__buttons-cancel') as HTMLElement;
 const equals = document.querySelector('.iphone-calculator__buttons-solve') as HTMLElement;
+const plusminus = document.querySelector('.plusminus') as HTMLElement;
 
-
-// const firstValue: number = 0;
-// const secondValue: number = 0;
 
 const mathInstance: MathJsStatic = math
 
-if (!display || !buttonsContainer || !numbers || !operations || !special || !deleteAll ) throw new Error('Something is wrong with the selectors');
+if (!display || !buttonsContainer || !numbers || !operations || !special || !deleteAll || !plusminus ) throw new Error('Something is wrong with the selectors');
 
 
 const handleDisplay = (value: string) => {
@@ -28,7 +26,8 @@ const handleButtonSelection = (e: MouseEvent): string => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
     switch (buttonText.toLowerCase()) {
       case "=":
-      case "c": 
+      case "c":
+      case "+/-":
         return "";
       default:
         return buttonText;
@@ -55,6 +54,19 @@ const handleDelete = (value: string, e: MouseEvent) => {
   }
 }
 
+const changeSign = (value: string) => {
+  const numberValue = parseFloat(display.value)
+  if (numberValue > 0){
+    display.value = (`-${numberValue}`).toString()
+    return (`-${numberValue}`).toString()
+  }
+  else {
+    display.value = (Math.abs(numberValue)).toString()
+    return (Math.abs(numberValue)).toString()
+  }
+}
+
+
 buttonsContainer.addEventListener('click', (e) => {
   const buttonText = handleButtonSelection(e);
   handleDisplay(buttonText);
@@ -70,6 +82,8 @@ equals.addEventListener('click', () => {
 deleteAll.addEventListener('click', () => {
   display.value = ""
 })
+
+plusminus.addEventListener('click', () => changeSign(display.value));
 
 
 
