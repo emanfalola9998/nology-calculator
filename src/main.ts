@@ -1,6 +1,11 @@
 import './style.css';
 import * as math from 'mathjs';
-import { MathJsStatic } from 'mathjs'; 
+
+// Assign the imported math object to mathInstance
+const mathInstance: any = math;
+
+
+
 
 const display = document.querySelector('.iphone-calculator__display-input') as HTMLInputElement;
 const buttonsContainer = document.querySelector('.iphone-calculator__buttons') as HTMLDivElement;
@@ -12,7 +17,7 @@ const plusminus = document.querySelector('.iphone-calculator__buttons-plusminus'
 const percentage = document.querySelector('.iphone-calculator__buttons-percentage') as HTMLElement;
 
 
-const mathInstance: MathJsStatic = math;
+
 
 if (!display || !buttonsContainer || !numbers || !operations || !deleteAll || !plusminus ) throw new Error('Something is wrong with the selectors');
 
