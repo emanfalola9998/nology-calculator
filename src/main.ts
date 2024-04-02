@@ -7,15 +7,13 @@ const mathInstance: math.EvalFunction = math;
 
 const display = document.querySelector('.iphone-calculator__display-input') as HTMLInputElement;
 const buttonsContainer = document.querySelector('.iphone-calculator__buttons') as HTMLDivElement;
-const numbers = document.querySelector('.iphone-calculator__buttons-numbers') as HTMLElement;
-const operations = document.querySelector('.iphone-calculator__buttons-operations') as HTMLElement;
 const deleteAll = document.querySelector('.iphone-calculator__buttons-cancel') as HTMLElement;
 const equals = document.querySelector('.iphone-calculator__buttons-solve') as HTMLElement;
 const plusminus = document.querySelector('.iphone-calculator__buttons-plusminus') as HTMLElement;
 const percentage = document.querySelector('.iphone-calculator__buttons-percentage') as HTMLElement;
 
 
-if (!display || !buttonsContainer || !numbers || !operations || !deleteAll || !plusminus ) throw new Error('Something is wrong with the selectors');
+if (!display || !buttonsContainer  || !deleteAll || !plusminus ) throw new Error('Something is wrong with the selectors');
 
 
 const handleDisplay = (value: string) => {
