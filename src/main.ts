@@ -1,10 +1,8 @@
 import './style.css';
 import * as math from 'mathjs';
 import { EvalFunction } from 'mathjs';
-// Assign the imported math object to mathInstance
+
 const mathInstance: math.EvalFunction = math;
-
-
 
 
 const display = document.querySelector('.iphone-calculator__display-input') as HTMLInputElement;
@@ -15,8 +13,6 @@ const deleteAll = document.querySelector('.iphone-calculator__buttons-cancel') a
 const equals = document.querySelector('.iphone-calculator__buttons-solve') as HTMLElement;
 const plusminus = document.querySelector('.iphone-calculator__buttons-plusminus') as HTMLElement;
 const percentage = document.querySelector('.iphone-calculator__buttons-percentage') as HTMLElement;
-
-
 
 
 if (!display || !buttonsContainer || !numbers || !operations || !deleteAll || !plusminus ) throw new Error('Something is wrong with the selectors');
@@ -78,6 +74,8 @@ const changeToPercentage = () => {
   display.value = percentage.toString()
     return percentage
 }
+
+
 
 buttonsContainer.addEventListener('click', (e) => {
   const buttonText = handleButtonSelection(e);

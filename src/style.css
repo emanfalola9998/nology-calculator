@@ -247,6 +247,21 @@
 
 @media screen and (min-width: 768px) {
   .iphone-calculator {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .iphone-calculator {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .iphone-calculator {
     max-width: 30%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .iphone-calculator {
+    max-width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
