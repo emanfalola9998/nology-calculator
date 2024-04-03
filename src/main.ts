@@ -70,9 +70,9 @@ const changeToPercentage = () => {
   const numberValue = parseFloat(display.value)
   const percentage = (numberValue / 100)
   display.value = percentage.toString()
-    return percentage
+    return percentage;
 }
-
+ 
 
 
 buttonsContainer.addEventListener('click', (e) => {
