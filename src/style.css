@@ -243,6 +243,7 @@
   border-radius: 16px;
   max-width: 80%;
   margin: 0 auto;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -257,11 +258,11 @@
 }
 @media screen and (min-width: 1200px) {
   .iphone-calculator {
-    max-width: 30%;
+    max-width: 20%;
   }
 }
 @media screen and (min-width: 1440px) {
   .iphone-calculator {
-    max-width: 50%;
+    max-width: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
