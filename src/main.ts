@@ -23,6 +23,8 @@ const handleDisplay = (value: string) => {
 
 const handleButtonSelection = (e: MouseEvent): string => {
     const buttonText = (e.target as HTMLButtonElement).innerText;
+    console.log("buttonText", buttonText);
+    
     switch (buttonText.toLowerCase()) {
       case "=":
       case "c":
@@ -72,13 +74,15 @@ const changeToPercentage = () => {
   display.value = percentage.toString()
     return percentage;
 }
- 
 
 
 buttonsContainer.addEventListener('click', (e) => {
-  const buttonText = handleButtonSelection(e);
-  handleDisplay(buttonText);
+  if (e.target instanceof HTMLButtonElement) {
+    const buttonText = handleButtonSelection(e);
+    handleDisplay(buttonText);
+  }
 });
+
 
 equals.addEventListener('click', () => {
   const expression = display.value;
