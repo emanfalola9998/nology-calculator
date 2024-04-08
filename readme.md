@@ -33,3 +33,5 @@ Technologies Used
 HTML
 CSS
 JavaScript
+
+When a calculation that isn't possible is entered a console.log error code is produced
